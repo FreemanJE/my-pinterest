@@ -1,0 +1,82 @@
+.mainboard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    background-color: rgba(209, 224, 230, 0.318);
+    /* background-color: rgb(24, 119, 156); */
+    overflow: hidden;
+
+}
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;       
+    z-index: -5;
+
+}
+
+.overlay {
+    position: absolute;;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(250, 244, 244, 0.706);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+.mainboard__container {   
+    column-gap: 10px;
+    margin: 50px auto;
+    height: 100%;    
+ 
+}
+@media (min-width: 0px) and (max-width: 755px) {
+    .mainboard__container {
+        max-width: 504px;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 756px) and (max-width: 1007px) {
+    .mainboard__container {
+        max-width: 756px;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1008px) and (max-width: 1511px) {
+    .mainboard__container {
+        max-width: 1008px;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1512px) and (max-width: 2015px) {
+    .mainboard__container {
+        width: 1512px;
+        column-count: 6;
+    }
+}
+
+@media (min-width: 2016px) and (max-width: 2519px) {
+    .mainboard__container {
+        width: 2016px;
+        column-count: 8;
+    }
+}
+
+@media (min-width: 2268px) and (max-width: 2519px) {
+    .mainboard__container {
+        width: 2268px;
+        column-count: 9;
+    }
+}
